@@ -12,6 +12,10 @@
     --white: #FFFFFF;
 }
 
+* {
+    outline: 1px solid tomato;
+}
+
 body {
     font-family: var(--primary-font);
     background-color: #FFFFFF;
@@ -20,6 +24,7 @@ body {
 
 .list {
     list-style: none;
+    padding-left: 0px;
 }
 
 .link {
@@ -27,6 +32,12 @@ body {
 }
 
 /* ------- COMPONENTS ------- */
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -36,6 +47,11 @@ body {
     color: var(--brand-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -43,12 +59,33 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
 }
+
+.img-to-block {
+    display: block;
+}
 /* ------- / COMPONENTS ------- */
 
 /* ------- NAVIGATION ------- */
+.header-flex {
+    display: flex; 
+}
+
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-nav {
+    display: flex;  
+    align-items: center;
+}
+
 .logo-header-secondcolor {
     color: var(--black);
 }
+
+.menu {
+    display: flex;
+} 
 
 .menu .link {
     font-weight: 500;
@@ -62,6 +99,10 @@ body {
 .menu .link:hover,
 .menu .link:focus {
     color: var(--brand-color);
+}
+
+.contact {
+    display: flex;
 }
 
 .contact .link {
@@ -83,6 +124,10 @@ body {
     background-color: var(--dark-background-color);
     color: var(--white);
     text-align: center;
+    padding-top: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -91,6 +136,9 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
 }
 
 .hero-button {
@@ -102,6 +150,13 @@ body {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.06em;
+    min-height: 50px;
+    min-width: 200px;
+    padding: 10px 32px;
+    margin: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
 }
 
 .hero-button:hover,
@@ -112,6 +167,10 @@ body {
 
 
 /* ------- BENEFITS ------- */
+.benefits-list {
+    display: flex;
+}
+
 .benefits-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -132,6 +191,11 @@ body {
 .work {
     text-align: center;
 }
+
+.work-list {
+    display: flex;
+}
+
 /* ------- / WHAT DO WE DO ------- */
 
 /* ------- TEAM ------- */
@@ -139,8 +203,18 @@ body {
     background-color: var(--light-background-color);
 }
 
+.team-list {
+    display: flex;
+}
+
 .team-item {
+    width: 270px;
+    /* min-height: 368px; */
+    text-align: center;
     background-color: var(--white);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-name {
@@ -163,6 +237,10 @@ body {
     text-align: center;
 }
 
+.gallery-filter {
+    display: flex;
+}
+
 .filter-button {
     color: var(--main-text);
     background-color: var(--light-background-color);
@@ -180,6 +258,11 @@ body {
 .filter-button:focus {
     color: var(--white);
     background-color: var(--brand-color);
+}
+
+.gallery-item {
+    width: 370px;
+    border: 1px solid #EEEEEE;
 }
 
 .project-title {
@@ -201,6 +284,7 @@ body {
 /* ------- FOOTER ------- */
 .footer {
     background-color: var(--dark-background-color);
+    padding: 60px 0px;
 }
 
 .logo-footer-secondcolor {
