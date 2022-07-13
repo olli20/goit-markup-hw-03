@@ -13,7 +13,7 @@
 }
 
 * {
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 .list {
     list-style: none;
-    padding-left: 0px;
+    
 }
 
 .link {
@@ -38,12 +38,13 @@ body {
 
 ul {
     margin: 0px;
+    padding-left: 0px;
 }
 
 /* ------- COMPONENTS ------- */
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: 1170px;
     padding: 0 15px;
 }
 
@@ -56,9 +57,9 @@ ul {
     color: var(--brand-color);
 }
 
-.page-nav .logo {
+/* .page-nav .logo {
     margin-right: 93px;
-}
+} */
 
 .section {
     padding-top: 94px;
@@ -79,13 +80,10 @@ ul {
 /* ------- / COMPONENTS ------- */
 
 /* ------- NAVIGATION ------- */
-.header-flex {
+.page-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.page-header {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -104,6 +102,7 @@ ul {
 
 .menu {
     display: flex;
+    margin-left: 93px;
 } 
 
 .menu .item:not(:last-child),
@@ -137,6 +136,7 @@ ul {
 
 .contact {
     display: flex;
+    /* margin-left: auto; */
 }
 
 .contact .link {
@@ -150,8 +150,6 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-
 }
 
 .contact .link:hover,
@@ -211,21 +209,23 @@ ul {
 /* ------- BENEFITS ------- */
 .benefits {
     padding-bottom: 0px;
+    
 }
 
 .benefits-list {
     display: flex;
+    background-color: tomato;
 }
 
 .benefits-subtitle {
     margin-top: 0px;
     margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 }
 
 .benefits-descriptor {
@@ -263,7 +263,9 @@ ul {
 .team-item {
     width: 270px;
     background-color: var(--white);
+
     text-align: center;
+
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -321,6 +323,7 @@ ul {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
 .gallery-filter .current,
@@ -331,9 +334,22 @@ ul {
 }
 
 .gallery-item {
-    width: 370px;
-    border: 1px solid #EEEEEE;
+    width: calc(100% / 3);
+
+    /* width: 370px; */
+    /* border: 1px solid #EEEEEE; */
 }
+
+
+
+/* 
+.gallery-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.gallery-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+} */
 
 .project-title {
     font-weight: 700;
@@ -353,8 +369,8 @@ ul {
 
 /* ------- FOOTER ------- */
 .footer {
-    background-color: var(--dark-background-color);
     padding: 60px 0px;
+    background-color: var(--dark-background-color);
 }
 
 .logo-footer-secondcolor {
@@ -362,12 +378,12 @@ ul {
 }
 
 .address .link {
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .address .kyiv-address {
