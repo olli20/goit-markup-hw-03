@@ -13,7 +13,7 @@
 }
 
 * {
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 body {
@@ -25,7 +25,6 @@ body {
 
 .list {
     list-style: none;
-    
 }
 
 .link {
@@ -81,15 +80,14 @@ ul {
 
 /* ------- NAVIGATION ------- */
 .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #ECECEC;
 }
 
-/* .header-border {
-    border-bottom: 1px solid #ECECEC;
-} */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .page-nav {
     display: flex;  
@@ -160,7 +158,7 @@ ul {
 
 /* ------- HERO ------- */
 .hero {
-    padding: 200px 452px;
+    padding: 200px;
     background-color: var(--dark-background-color);
     color: var(--white);
     text-align: center;
@@ -209,12 +207,18 @@ ul {
 /* ------- BENEFITS ------- */
 .benefits {
     padding-bottom: 0px;
-    
 }
 
 .benefits-list {
     display: flex;
-    background-color: tomato;
+}
+
+.benefits-item {
+    width: calc((100% - 90px) / 4);
+}
+
+.benefits-item:not(:nth-child(4n)) {
+    margin-right: 30px;
 }
 
 .benefits-subtitle {
@@ -241,12 +245,16 @@ ul {
 /* ------- / BENEFITS ------- */
 
 /* ------- WHAT DO WE DO ------- */
-.work {
-    text-align: center;
-}
-
 .work-list {
     display: flex;
+}
+
+.work-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.work-item:not(:nth-child(3n)) {
+    margin-right: 30px;
 }
 
 /* ------- / WHAT DO WE DO ------- */
@@ -261,7 +269,7 @@ ul {
 }
 
 .team-item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
     background-color: var(--white);
 
     text-align: center;
@@ -271,7 +279,18 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.team-photo {
+    display: block;
+    margin-bottom: 30px;
+}
+
 .team-name {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -279,6 +298,7 @@ ul {
 }
 
 .team-role {
+    margin-top: 0;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -287,16 +307,11 @@ ul {
 /* ------- / TEAM ------- */
 
 /* ------- PORTFOLIO ------- */
-.portfolio {
-    text-align: center;
-}
-
 .gallery-filter {
     display: flex;
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 50px;
-
 }
 
 .filter-button {
@@ -334,24 +349,29 @@ ul {
 }
 
 .gallery-item {
-    width: calc(100% / 3);
-
+    width: calc((100% - 60px) / 3 );
     /* width: 370px; */
     /* border: 1px solid #EEEEEE; */
 }
 
-
-
-/* 
 .gallery-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
 .gallery-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
-} */
+}
+
+.item-border {
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
 
 .project-title {
+    margin-top: 0;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -360,6 +380,7 @@ ul {
 }
 
 .project-type {   
+    margin: 0;
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.03em;
@@ -375,6 +396,11 @@ ul {
 
 .logo-footer-secondcolor {
     color: var(--white);
+}
+
+.footer .logo {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .address .link {

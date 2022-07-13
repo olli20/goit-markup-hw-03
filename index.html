@@ -18,31 +18,33 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="page-header container">
+    <header class="page-header">
 
-        <nav class="page-nav">
-            <a class="logo link" href="./index.html">Web<span class="logo-header-secondcolor">Studio</span></a>
-            <ul class="menu list">
+        <div class="header-container container">
+            <nav class="page-nav">
+                <a class="logo link" href="./index.html">Web<span class="logo-header-secondcolor">Studio</span></a>
+                <ul class="menu list">
+                    <li class="item">
+                        <a class="link current" href="./index.html">Студія</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="./contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <ul class="contact list">
                 <li class="item">
-                    <a class="link current" href="./index.html">Студія</a>
+                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="./contacts.html">Контакти</a>
+                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        
-        <ul class="contact list">
-            <li class="item">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
 
     </header>
 
@@ -60,21 +62,21 @@
             <div class="container">
                 <h2 class="section-title">Наші переваги</h2>
                 <ul class="benefits-list list">
-                    <li>
+                    <li class="benefits-item">
                         <h3 class="benefits-subtitle">Увага до деталей</h3>
                         <p lang="zxx" class="benefits-descriptor">Ідейні міркування, і навіть початок повсякденної роботи з формування
                             позиції.</p>
                     </li>
-                    <li>
+                    <li class="benefits-item">
                         <h3 class="benefits-subtitle">Пунктуальність</h3>
                         <p lang="zxx" class="benefits-descriptor">Завдання організації, особливо ж рамки і місце навчання кадрів
                             спричиняє.</p>
                     </li>
-                    <li>
+                    <li class="benefits-item">
                         <h3 class="benefits-subtitle">Планування</h3>
                         <p lang="zxx" class="benefits-descriptor">Так само консультація з широким активом значно обумовлює.</p>
                     </li>
-                    <li>
+                    <li class="benefits-item">
                         <h3 class="benefits-subtitle">Сучасні технології</h3>
                         <p lang="zxx" class="benefits-descriptor">Значимість цих проблем є настільки очевидною, що реалізація планових
                             завдань.</p>
@@ -88,9 +90,9 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємось</h2>
                 <ul class="work-list list">
-                    <li><img class="img-to-block" src="./images/work/work1.jpg" alt="Сучасне робоче місце програміста" width="370" height="294"></li>
-                    <li><img class="img-to-block" src="./images/work/work2.jpg" alt="Жінка працює над дизайном веб-додатку" width="370" height="294"></li>
-                    <li><img class="img-to-block" src="./images/work/work3.jpg" alt="Людина вибирає колір з палітри кольорів на планшеті" width="370"
+                    <li class="work-item"><img class="img-to-block" src="./images/work/work1.jpg" alt="Сучасне робоче місце програміста" width="370" height="294"></li>
+                    <li class="work-item"><img class="img-to-block" src="./images/work/work2.jpg" alt="Жінка працює над дизайном веб-додатку" width="370" height="294"></li>
+                    <li class="work-item"><img class="img-to-block" src="./images/work/work3.jpg" alt="Людина вибирає колір з палітри кольорів на планшеті" width="370"
                             height="294"></li>
                 </ul>
             </div>
@@ -102,22 +104,22 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img src="./images/team/igor-demianenko.jpg" alt="Фотографія Ігоря Дем'яненка" width="270">
+                        <img class="team-photo" src="./images/team/igor-demianenko.jpg" alt="Фотографія Ігоря Дем'яненка" width="270">
                         <h3 class="team-name">Ігор Дем'яненко</h3>
                         <p class="team-role" lang="en">Product Designer</p>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/olga-repina.jpg" alt="Фотографія Ольги Репіної" width="270">
+                        <img class="team-photo" src="./images/team/olga-repina.jpg" alt="Фотографія Ольги Репіної" width="270">
                         <h3 class="team-name">Ольга Репіна</h3>
                         <p class="team-role" lang="en">Frontend Developer</p>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/mykola-tarasov.jpg" alt="Фотографія Миколи Тарасова" width="270">
+                        <img class="team-photo" src="./images/team/mykola-tarasov.jpg" alt="Фотографія Миколи Тарасова" width="270">
                         <h3 class="team-name">Микола Тарасов</h3>
                         <p class="team-role" lang="en">Marketing</p>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/myhailo-yermakov.jpg" alt="Фотографія Михайла Єрмакова" width="270">
+                        <img class="team-photo" src="./images/team/myhailo-yermakov.jpg" alt="Фотографія Михайла Єрмакова" width="270">
                         <h3 class="team-name">Михайло Єрмаков</h3>
                         <p class="team-role" lang="en">UI Designer</p>
                     </li>
