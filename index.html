@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -53,8 +53,10 @@
 
         <!-- HERO -->
         <section class="hero">
-                <h1 class="main-title">Ефективні рішення <br /> для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <div class="container">
+                    <h1 class="main-title">Ефективні рішення <br /> для вашого бізнесу</h1>
+                    <button class="hero-button" type="button">Замовити послугу</button>
+                </div>
         </section>
 
         <!-- SECTION BENEFITS -->
@@ -90,9 +92,9 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємось</h2>
                 <ul class="work-list list">
-                    <li class="work-item"><img class="img-to-block" src="./images/work/work1.jpg" alt="Сучасне робоче місце програміста" width="370" height="294"></li>
-                    <li class="work-item"><img class="img-to-block" src="./images/work/work2.jpg" alt="Жінка працює над дизайном веб-додатку" width="370" height="294"></li>
-                    <li class="work-item"><img class="img-to-block" src="./images/work/work3.jpg" alt="Людина вибирає колір з палітри кольорів на планшеті" width="370"
+                    <li class="work-item"><img src="./images/work/work1.jpg" alt="Сучасне робоче місце програміста" width="370" height="294"></li>
+                    <li class="work-item"><img src="./images/work/work2.jpg" alt="Жінка працює над дизайном веб-додатку" width="370" height="294"></li>
+                    <li class="work-item"><img src="./images/work/work3.jpg" alt="Людина вибирає колір з палітри кольорів на планшеті" width="370"
                             height="294"></li>
                 </ul>
             </div>
@@ -105,23 +107,31 @@
                 <ul class="team-list list">
                     <li class="team-item">
                         <img class="team-photo" src="./images/team/igor-demianenko.jpg" alt="Фотографія Ігоря Дем'яненка" width="270">
-                        <h3 class="team-name">Ігор Дем'яненко</h3>
-                        <p class="team-role" lang="en">Product Designer</p>
+                        <div class="team-text">
+                            <h3 class="team-name">Ігор Дем'яненко</h3>
+                            <p class="team-role" lang="en">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-photo" src="./images/team/olga-repina.jpg" alt="Фотографія Ольги Репіної" width="270">
-                        <h3 class="team-name">Ольга Репіна</h3>
-                        <p class="team-role" lang="en">Frontend Developer</p>
+                        <div class="team-text">
+                            <h3 class="team-name">Ольга Репіна</h3>
+                            <p class="team-role" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-photo" src="./images/team/mykola-tarasov.jpg" alt="Фотографія Миколи Тарасова" width="270">
-                        <h3 class="team-name">Микола Тарасов</h3>
-                        <p class="team-role" lang="en">Marketing</p>
+                        <div class="team-text">
+                            <h3 class="team-name">Микола Тарасов</h3>
+                            <p class="team-role" lang="en">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-photo" src="./images/team/myhailo-yermakov.jpg" alt="Фотографія Михайла Єрмакова" width="270">
-                        <h3 class="team-name">Михайло Єрмаков</h3>
-                        <p class="team-role" lang="en">UI Designer</p>
+                        <div class="team-text">
+                            <h3 class="team-name">Михайло Єрмаков</h3>
+                            <p class="team-role" lang="en">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
