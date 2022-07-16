@@ -10,9 +10,9 @@
     --white: #FFFFFF;
 }
 
-* {
+/* * {
     outline: 1px solid green;
-}
+} */
 
 body {
     font-family: var(--primary-font);
