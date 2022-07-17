@@ -56,7 +56,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--brand-color);
+    color: var(--brand-color)s;
 }
 
 /* .page-nav .logo {
@@ -184,7 +184,6 @@ img {
 
     background-color: var(--brand-color);
     color: var(--white);
-
     /* font-family: inherit; */
     font-weight: 700;
     font-size: 16px;
@@ -242,15 +241,20 @@ img {
 /* ------- WHAT DO WE DO ------- */
 .work-list {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .work-item {
     width: calc((100% - 60px) / 3);
 }
 
-.work-item:not(:nth-child(3n)) {
+.work-item:not(:last-child) {
     margin-right: 30px;
 }
+
+/* .work-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+} */
 
 /* ------- / WHAT DO WE DO ------- */
 
@@ -261,6 +265,7 @@ img {
 
 .team-list {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .team-item {
@@ -274,9 +279,13 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item:not(:nth-child(4n)) {
+.team-item:not(:last-child) {
     margin-right: 30px;
 }
+
+/* .team-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+} */
 
 .team-text {
     padding: 30px 24px;
